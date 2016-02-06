@@ -8,9 +8,8 @@
  * Date and Time: Feb 5, 2016 12:33:00 AM 
  * Project Name: TsaiChangMai_10010_CS526A_HW2 
  */
+
 // Data validation
-// get the data from the form
-// Add your data validation code here
 // define empty variables
 $email = $passwd = $name = $address = $city = $state = $country = $zip = $phone = "";
 $emailErr = $passwdErr = $repasswdErr = $nameErr = "";
@@ -126,16 +125,3 @@ if ($result) {
     require('db_connect.php');
     insertToDataBase($email, $passwd, $name, $address, $city, $state, $country, $zip, $phone);
 }
-//$db_connect = null;
-/*
-
-if ($result) {
-    ?>
-    <p>
-        Dear, <?php echo $fullname; ?> your account is successfully created
-    <?php
-} else {
-    echo "Some error occurred. Please use different email address";
-}
-?>
-*/
