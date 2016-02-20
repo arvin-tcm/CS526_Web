@@ -23,6 +23,9 @@ if ($editSubmitted) {
                 , $_POST["city"], $_POST["state"], $_POST["country"], $_POST["zip"], $_POST["phone"]);
         $customerDB = new CustomerRepository($db);
         $output = $customerDB->updateCustomer($customer);
+        $pageData->content .= include_once "customerList.php";
+        $page = include_once "page.php";
+        echo $page;
     }
 } else {    //this runs if form was NOT submitted   
     $email = $_GET['email'];

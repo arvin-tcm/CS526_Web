@@ -1,10 +1,13 @@
+<?php
+
 /*  
  * Student Info: Name=Tsai-Chang Mai, ID=10010
- * Subject: CS526(C)_HW2_Spring_2016
+ * Subject: CS526(C)_HW3
+_Spring_2016
  * Author: Arvin-tcm 
- * Filename: signup.php 
- * Date and Time: Feb 5, 2016 12:33:10 AM 
- * Project Name: TsaiChangMai_10010_CS526A_HW2 
+ * Filename: config.sql
+ * Date and Time: Feb 19, 2016 5:26:23 PM 
+ * Project Name: TsaiChangMai_10010_CS526A_HW3 
  */ 
 CREATE DATABASE IF NOT EXISTS signup_app;
 CREATE TABLE IF NOT EXISTS signup_app.customers (
@@ -28,3 +31,4 @@ SELECT * FROM signup_app.customers;
 TRUNCATE signup_app.customers;
 INSERT INTO signup_app.customers (email, passwd, customer_name, address, city, state, country, zip, phone) 
 VALUES ('c@gmail.com', '12345','abc','456','b','d','e',12345, '12344445');
+
